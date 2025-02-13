@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Кадровый резерв</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  </head>
+  <body class="bg-[#E9F0F3]">
+    <div
+      class="container px-3.5 md:px-0 sm: py-0 md:w-full md:py-0 lg:w-full mx-auto"
+    >
+      <div
+        class="w-full my-8 rounded-xl bg-[#5FAFE0] flex justify-between items-center"
+      >
+        <div class="flex flex-col py-8 px-6 w-full lg:w-1/2">
+          <p class="text-2xl text-white font-semibold">Өтінімді тексеру</p>
+          <p class="text-white font-medium mt-3">
+            Бұл бетте сіз кадрлық резервке үміткерлерге тапсырған өтінімді
+            тексере аласыз
+          </p>
+
+          <div class="relative mt-10 w-full">
+            <input
+              class="rounded-lg bg-white w-full py-2 px-2.5 outline-none border border-[#D4D4D4]"
+              type="text"
+              placeholder="ИИН"
+            />
+            <button
+              class="py-[1.5px] px-[16px] rounded-xl absolute top-2 right-2 bg-[#55BBEB] text-white font-semibold"
+            >
+              Тексеру
+            </button>
+          </div>
+        </div>
+
+        <img
+          class="hidden lg:block relative w-auto right-10"
+          src="images/check-reserve.png"
+          alt=""
+        />
+      </div>
+
+      <div class="flex flex-wrap justify-between mb-6">
+        <p class="font-bold text-2xl mb-5 md:mb-0">
+          Кадрлық резерв жобасының негізгі сандары
+        </p>
+        <select
+          class="rounded-lg px-[16px] py-[4px] outline-none"
+          id="years"
+          name="years"
+        >
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+        </select>
+      </div>
+
+      <div class="w-full flex flex-wrap justify-between">
+        <div
+          class="mb-8 w-full lg:w-[49%] bg-white border-2 border-[#CAEAF9] py-[27px] px-[42px] flex items-center justify-center rounded-lg"
+        >
+          <p
+            class="text-[#04577E] text-3xl lg:text-[45px] xl:text-[64px] font-black"
+          >
+            13 780
+          </p>
+          <p
+            class="ml-10 text-[#81ABBE] font-bold text-lg lg:text-[40px] leading-[120%]"
+          >
+            Өтінімдер <br />
+            саны
+          </p>
+        </div>
+
+        <div class="w-full lg:w-[49%] flex flex-wrap justify-between">
+          <a
+            href=""
+            class="mb-8 w-full lg:w-[32%] bg-[#B1E0F6] rounded-lg p-[16px] flex flex-col justify-between"
+          >
+            <p
+              class="text-[#04577E] text-[16px] font-semibold leading-[120%] mb-5"
+            >
+              Біліктілік талаптарына сәйкес
+            </p>
+
+            <div class="w-full flex items-center justify-between">
+              <p class="text-[#04577E] text-[32px] font-bold">1005</p>
+              <img src="images/arrow-link-blue.svg" alt="" />
+            </div>
+          </a>
+
+          <a
+            href=""
+            class="mb-8 w-full lg:w-[32%] bg-[#77C9EF] rounded-lg p-[16px] flex flex-col justify-between"
+          >
+            <p
+              class="text-[#04577E] text-[16px] font-semibold leading-[120%] mb-5"
+            >
+              Психометриялық тестілеуден өтті
+            </p>
+
+            <div class="w-full flex items-center justify-between">
+              <p class="text-[#04577E] text-[32px] font-bold">1005</p>
+              <img src="images/arrow-link-blue.svg" alt="" />
+            </div>
+          </a>
+
+          <a
+            href=""
+            class="mb-8 w-full lg:w-[32%] bg-[#55BBEB] rounded-lg p-[16px] flex flex-col justify-between"
+          >
+            <p class="text-white text-[16px] font-semibold leading-[120%] mb-5">
+              Оқуға ұсынылды
+            </p>
+
+            <div class="w-full flex items-center justify-between">
+              <!-- <p class="text-white text-[32px] font-bold">1005</p> -->
+              <img src="images/loading.svg" alt="" />
+              <img src="images/arrow-link-white.svg" alt="" />
+            </div>
+          </a>
+        </div>
+
+        <a
+          href=""
+          class="w-full border-2 border-[#CAEAF9] lg:w-[23.5%] bg-white rounded-lg p-[16px] flex flex-col justify-between mb-8"
+        >
+          <div class="flex justify-between mb-[38px]">
+            <p
+              class="text-[#04577E] bg-[#F8F9CC] px-[12px] py-[4px] rounded-2xl"
+            >
+              Базалық деңгейді аяқтады
+            </p>
+            <img src="images/arrow-link-blue.svg" alt="" />
+          </div>
+
+          <div class="flex justify-between items-center">
+            <p class="text-[#04577E] font-bold text-[32px] md:text-[48px]">
+              1005
+            </p>
+            <img src="images/level-1.png" alt="" />
+          </div>
+        </a>
+
+        <a
+          href=""
+          class="w-full border-2 border-[#CAEAF9] lg:w-[23.5%] bg-white rounded-lg p-[16px] flex flex-col justify-between mb-8"
+        >
+          <div class="flex justify-between mb-[38px]">
+            <p
+              class="text-[#04577E] bg-[#EBF9CC] px-[12px] py-[4px] rounded-2xl"
+            >
+              Ілгері деңгейді аяқтады
+            </p>
+            <img src="images/arrow-link-blue.svg" alt="" />
+          </div>
+
+          <div class="flex justify-between items-center">
+            <p class="text-[#04577E] font-bold text-[32px] md:text-[48px]">
+              1005
+            </p>
+            <img src="images/level-2.png" alt="" />
+          </div>
+        </a>
+
+        <a
+          href=""
+          class="w-full border-2 border-[#CAEAF9] lg:w-[23.5%] bg-white rounded-lg p-[16px] flex flex-col justify-between mb-8"
+        >
+          <div class="flex justify-between mb-[38px]">
+            <p
+              class="text-[#04577E] bg-[#D4F9CC] px-[12px] py-[4px] rounded-2xl"
+            >
+              Кәсіби деңгейді аяқтады
+            </p>
+            <img src="images/arrow-link-blue.svg" alt="" />
+          </div>
+
+          <div class="flex justify-between items-center">
+            <p class="text-[#04577E] font-bold text-[32px] md:text-[48px]">
+              1005
+            </p>
+            <img src="images/level-3.png" alt="" />
+          </div>
+        </a>
+
+        <a
+          href=""
+          class="w-full border-2 border-[#CAEAF9] lg:w-[23.5%] bg-[#BBEB55] rounded-lg p-[16px] flex flex-col justify-between mb-8"
+        >
+          <div class="flex justify-between mb-[38px]">
+            <p class="text-[#04577E] bg-white px-[12px] py-[4px] rounded-2xl">
+              Әңгімелесуге ұсынылды
+            </p>
+            <img src="images/arrow-link-white.svg" alt="" />
+          </div>
+
+          <div class="flex justify-between items-center">
+            <p class="text-[#04577E] font-bold text-[32px] md:text-[48px]">
+              1005
+            </p>
+            <img src="images/level-4.png" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <p class="font-bold text-2xl mb-8">
+        «БІЛІМ БЕРУДЕГІ 1000 КӨШБАСШЫ» жобасының резервшілерінің тізімі
+      </p>
+
+      <div class="flex w-full justify-between flex-wrap">
+        <a
+          href=""
+          class="w-full lg:w-[32%] bg-white border-2 border-[#E5E5E5] rounded-lg p-[24px] flex items-center justify-between mb-5"
+        >
+          <p
+            class="text-[#04577E] text-3xl lg:text-[45px] xl:text-[64px] font-black"
+          >
+            13 780
+          </p>
+
+          <div class="flex flex-row lg:flex-col items-center justify-between">
+            <p
+              class="text-[#04577E] bg-[#EEF8FD] px-[12px] py-[4px] rounded-2xl"
+            >
+              2023 жыл
+            </p>
+            <img
+              class="ml-5 lg:ml-0 lg:mt-[50px]"
+              src="images/arrow-link-blue.svg"
+              alt=""
+            />
+          </div>
+        </a>
+
+        <a
+          href=""
+          class="w-full lg:w-[32%] bg-white border-2 border-[#E5E5E5] rounded-lg p-[24px] flex items-center justify-between mb-5"
+        >
+          <p
+            class="text-[#04577E] text-3xl lg:text-[45px] xl:text-[64px] font-black"
+          >
+            13 780
+          </p>
+
+          <div class="flex flex-row lg:flex-col items-center justify-between">
+            <p
+              class="text-[#04577E] bg-[#EEF8FD] px-[12px] py-[4px] rounded-2xl"
+            >
+              2024 жыл
+            </p>
+            <img
+              class="ml-5 lg:ml-0 lg:mt-[50px]"
+              src="images/arrow-link-blue.svg"
+              alt=""
+            />
+          </div>
+        </a>
+
+        <a
+          href=""
+          class="w-full lg:w-[32%] bg-white border-2 border-[#E5E5E5] rounded-lg p-[24px] flex items-center justify-between mb-5"
+        >
+          <p
+            class="text-[#04577E] text-3xl lg:text-[45px] xl:text-[64px] font-black"
+          >
+            13 780
+          </p>
+
+          <div class="flex flex-row lg:flex-col items-center justify-between">
+            <p
+              class="text-[#04577E] bg-[#EEF8FD] px-[12px] py-[4px] rounded-2xl"
+            >
+              2025 жыл
+            </p>
+            <img
+              class="ml-5 lg:ml-0 lg:mt-[50px]"
+              src="images/arrow-link-blue.svg"
+              alt=""
+            />
+          </div>
+        </a>
+      </div>
+
+      <div class="w-full rounded-xl bg-white my-8">
+        <div class="flex w-full items-center justify-between p-[20px]">
+          <p class="text-[#181819] text-2xl font-semibold">2025 жыл</p>
+          <a
+            class="group hover:bg-[#55BBEB] flex border border-[#55BBEB] rounded-full px-[15px] py-[7px]"
+            href=""
+          >
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="group-hover:fill-white"
+                d="M12 16.3765C11.8667 16.3765 11.7417 16.3559 11.625 16.3145C11.5083 16.2732 11.4 16.2022 11.3 16.1015L7.7 12.5015C7.5 12.3015 7.404 12.0682 7.412 11.8015C7.42 11.5349 7.516 11.3015 7.7 11.1015C7.9 10.9015 8.13767 10.7975 8.413 10.7895C8.68833 10.7815 8.92567 10.8772 9.125 11.0765L11 12.9515V5.80152C11 5.51818 11.096 5.28085 11.288 5.08952C11.48 4.89818 11.7173 4.80218 12 4.80152C12.2827 4.80085 12.5203 4.89685 12.713 5.08952C12.9057 5.28218 13.0013 5.51952 13 5.80152V12.9515L14.875 11.0765C15.075 10.8765 15.3127 10.7805 15.588 10.7885C15.8633 10.7965 16.1007 10.9009 16.3 11.1015C16.4833 11.3015 16.5793 11.5349 16.588 11.8015C16.5967 12.0682 16.5007 12.3015 16.3 12.5015L12.7 16.1015C12.6 16.2015 12.4917 16.2725 12.375 16.3145C12.2583 16.3565 12.1333 16.3772 12 16.3765ZM6 20.8015C5.45 20.8015 4.97933 20.6059 4.588 20.2145C4.19667 19.8232 4.00067 19.3522 4 18.8015V16.8015C4 16.5182 4.096 16.2809 4.288 16.0895C4.48 15.8982 4.71733 15.8022 5 15.8015C5.28267 15.8009 5.52033 15.8969 5.713 16.0895C5.90567 16.2822 6.00133 16.5195 6 16.8015V18.8015H18V16.8015C18 16.5182 18.096 16.2809 18.288 16.0895C18.48 15.8982 18.7173 15.8022 19 15.8015C19.2827 15.8009 19.5203 15.8969 19.713 16.0895C19.9057 16.2822 20.0013 16.5195 20 16.8015V18.8015C20 19.3515 19.8043 19.8225 19.413 20.2145C19.0217 20.6065 18.5507 20.8022 18 20.8015H6Z"
+                fill="#55BBEB"
+              />
+            </svg>
+
+            <p class="ml-3 group-hover:text-white text-[#55BBEB] font-semibold">
+              XLSX жүктеу
+            </p>
+          </a>
+        </div>
+
+        <hr />
+        <div class="hidden md:flex flex-col w-full px-[15px] mt-5">
+          <div
+            class="w-full flex justify-between px-5 border-b border-[#E6E6E6] py-2"
+          >
+            <p class="font-medium text-xl w-1/4 text-left">Облысы</p>
+            <p class="font-medium text-xl w-1/4 text-center">Өтінімдер саны</p>
+            <p class="font-medium text-xl w-1/4 text-center">Педагог саны</p>
+            <p class="font-medium text-xl w-1/4 text-right">
+              Директор орынбасары саны
+            </p>
+          </div>
+          <div
+            class="w-full flex items-center justify-between px-5 border-b border-[#E6E6E6] py-2"
+          >
+            <p class="w-1/4 text-left">Астана</p>
+            <p class="w-1/4 text-center">122</p>
+            <p class="w-1/4 text-center">10</p>
+            <p class="w-1/4 text-center">5</p>
+          </div>
+
+          <div
+            class="w-full flex items-center justify-between px-5 border-b border-[#E6E6E6] py-2"
+          >
+            <p class="w-1/4 text-left">Астана</p>
+            <p class="w-1/4 text-center">122</p>
+            <p class="w-1/4 text-center">10</p>
+            <p class="w-1/4 text-center">5</p>
+          </div>
+
+          <div
+            class="w-full flex items-center justify-between px-5 border-b border-[#E6E6E6] py-2"
+          >
+            <p class="w-1/4 text-left">Астана</p>
+            <p class="w-1/4 text-center">122</p>
+            <p class="w-1/4 text-center">10</p>
+            <p class="w-1/4 text-center">5</p>
+          </div>
+        </div>
+
+        <div class="w-full md:hidden">
+          <div
+            class="flex flex-wrap w-full border-b border-[#E6E6E6] px-[15px] mt-5"
+          >
+            <div class="flex flex-col w-1/2 mb-5">
+              <p class="font-medium text-xl">Облысы</p>
+              <p class="">Астана</p>
+            </div>
+
+            <div class="flex flex-col w-1/2 mb-5">
+              <p class="font-medium text-xl">Өтінімдер саны</p>
+              <p class="">122</p>
+            </div>
+
+            <div class="flex flex-col w-1/2 mb-5">
+              <p class="font-medium text-xl">Педагог саны</p>
+              <p class="">122</p>
+            </div>
+
+            <div class="flex flex-col w-1/2 mb-5">
+              <p class="font-medium text-xl">Директор орынбасары саны</p>
+              <p class="">122</p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-wrap w-full border-b border-[#E6E6E6] px-[15px] mt-5"
+          >
+            <div class="flex flex-col w-1/2 mb-5">
+              <p class="font-medium text-xl">Облысы</p>
+              <p class="">Астана</p>
+            </div>
+
+            <div class="flex flex-col w-1/2 mb-5">
+              <p class="font-medium text-xl">Өтінімдер саны</p>
+              <p class="">122</p>
+            </div>
+
+            <div class="flex flex-col w-1/2 mb-5">
+              <p class="font-medium text-xl">Педагог саны</p>
+              <p class="">122</p>
+            </div>
+
+            <div class="flex flex-col w-1/2 mb-5">
+              <p class="font-medium text-xl">Директор орынбасары саны</p>
+              <p class="">122</p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-wrap w-full border-b border-[#E6E6E6] px-[15px] mt-5"
+          >
+            <div class="flex flex-col w-1/2 mb-5">
+              <p class="font-medium text-xl">Облысы</p>
+              <p class="">Астана</p>
+            </div>
+
+            <div class="flex flex-col w-1/2 mb-5">
+              <p class="font-medium text-xl">Өтінімдер саны</p>
+              <p class="">122</p>
+            </div>
+
+            <div class="flex flex-col w-1/2 mb-5">
+              <p class="font-medium text-xl">Педагог саны</p>
+              <p class="">122</p>
+            </div>
+
+            <div class="flex flex-col w-1/2 mb-5">
+              <p class="font-medium text-xl">Директор орынбасары саны</p>
+              <p class="">122</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
